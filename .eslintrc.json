@@ -1,0 +1,101 @@
+{
+	"env": {
+		"es2021": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"settings": {},
+	"rules": {
+		"@typescript-eslint/explicit-function-return-type": "warn",
+		"@typescript-eslint/no-empty-function": "off",
+		"@typescript-eslint/no-unused-vars": [
+			"warn"
+		],
+		"@typescript-eslint/no-non-null-assertion": "off",
+		"keyword-spacing": "warn",
+		"default-case-last": "warn",
+		"eqeqeq": "error",
+		"no-case-declarations": "error",
+		"dot-notation": "warn",
+		"no-delete-var": "error",
+		"no-else-return": [
+			"warn",
+			{
+				"allowElseIf": true
+			}
+		],
+		"no-empty": "off",
+		"no-multi-str": "warn",
+		"no-throw-literal": "error",
+		"no-unneeded-ternary": "warn",
+		"no-useless-computed-key": "warn",
+		"no-var": "error",
+		"no-with": "error",
+		"prefer-numeric-literals": "error",
+		"require-await": "error",
+		"require-yield": "error",
+		"yoda": [
+			"warn",
+			"never",
+			{
+				"exceptRange": true
+			}
+		],
+		"array-bracket-spacing": [
+			"warn",
+			"never"
+		],
+		"comma-dangle": [
+			"warn",
+			"only-multiline"
+		],
+		"@typescript-eslint/ban-ts-comment": "off",
+		"@typescript-eslint/indent": [
+			"error",
+			"tab"
+		],
+		"quotes": [
+			"warn",
+			"single"
+		],
+		"semi": [
+			"warn",
+			"always"
+		],
+		"@typescript-eslint/naming-convention": [
+			"warn",
+			{
+				"selector": "default",
+				"format": null,
+				"leadingUnderscore": "forbid"
+			},
+			{
+				"selector": "property",
+				"modifiers": [
+					"private"
+				],
+				"format": null,
+				"leadingUnderscore": "allow"
+			},
+			{
+				"selector": "property",
+				"modifiers": [
+					"protected"
+				],
+				"format": null,
+				"leadingUnderscore": "allow"
+			}
+		]
+	}
+}
