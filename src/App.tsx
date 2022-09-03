@@ -1,7 +1,8 @@
 import React from 'react';
-import { generator } from './generator/generator';
+import { generator } from './generator/generator.js';
+import { AppState } from './typings/index.js';
 
-export default class App<P> extends React.Component<P, { generated: string }> {
+export default class App<P> extends React.Component<P, AppState> {
 	constructor(props: P) {
 		super(props);
 
