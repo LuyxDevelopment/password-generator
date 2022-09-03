@@ -1,5 +1,5 @@
 import React from 'react';
-import { generator } from './generator/generator.js';
+import { generator } from './generator/generator';
 import { AppState } from './typings/index.js';
 
 export default class App<P> extends React.Component<P, AppState> {
