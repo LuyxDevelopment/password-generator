@@ -1,13 +1,26 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import { render } from 'react-dom';
+
+import {
+	BrowserRouter as Router,
+	Route,
+	Routes,
+} from 'react-router-dom';
+
 import './index.css';
-import App from './App';
+import App from './pages/App';
+import NotFound from './pages/NotFound';
 import reportWebVitals from './reportWebVitals';
 
 render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>,
+	<StrictMode>
+		<Router>
+			<Routes>
+				<Route path="/" element={<App />} />
+				<Route path="*" element={<NotFound />} />
+			</Routes>
+		</Router>
+	</StrictMode>,
 	document.getElementById('root')
 );
 
